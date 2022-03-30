@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_30_002841) do
+ActiveRecord::Schema.define(version: 2022_03_30_004604) do
 
   create_table "articles", charset: "utf8mb3", force: :cascade do |t|
     t.string "title"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2022_03_30_002841) do
 
   create_table "posts", charset: "utf8mb3", force: :cascade do |t|
     t.string "title"
-    t.string "body"
+    t.text "body"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
