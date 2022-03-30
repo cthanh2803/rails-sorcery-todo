@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 2022_03_30_004604) do
     t.string "email", null: false
     t.string "crypted_password"
     t.string "salt"
+    t.integer "admin", default: 1
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_users_on_email", unique: true
